@@ -1,0 +1,156 @@
+body{
+    background-image: url("goldPM.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+  
+}
+
+header {
+    float: left;
+    background: rgba(234, 207, 207, 0.4);
+}
+    
+Header h1{
+    color: #906001;
+    font-size: 60px;
+    font-weight: lighter;
+    position: relative;
+    top: 50px;
+  
+  }
+
+  .sitat{
+   color:#906001;
+   font-size: 20px;
+    font-weight: lighter;
+   position: relative;
+   top: 30px;
+  
+   
+  }
+
+  #carmenbilde{
+    /*Bildet flyter ved siden av teksten*/
+    top:0px;
+    width: 12%;
+    margin-left: 5%;
+    float: left;  
+}
+
+.oppg{
+    font-size: 20px;
+    width: 65%;
+    margin:auto;
+    font-weight: lighter;
+    color: rgb(12, 9, 9);
+    text-align: justify;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: lighter;
+    color: #906001; 
+    
+}
+h5{
+    font-size: 30px;
+    font-weight: lighter;
+    color: #906001;
+}
+.listecontainer p{
+    color:rgb(126, 122, 122);
+}
+
+
+#side{
+background: rgba(234, 207, 207, 0.3);
+}
+
+#side li{
+    /*CSS-kode for hele sidefeltet (venstre)*/
+    background: rgba(234, 207, 207, 0.1); 
+       
+}
+
+#hoved li {
+    /*CSS-kode for hele hovedfeltet (høyre)*/
+   background-color: rgba(234, 207, 207, 0.2);
+    color:rgb(72, 68, 68);
+  
+}
+
+#hoved .list-group{
+    text-align: left;
+}
+.listecontainer li{
+    color:rgb(126, 122, 122); 
+}
+
+.listecontainer{
+    /*Gjelder for alle listene på venstre side*/
+    clear: left;
+   padding-bottom: 1.5em;
+    background: rgba(234, 207, 207, 0.1);
+}
+
+/*Under her kan du lege inn spesifikk CSS for hver av listene på venstre side*/
+#personalia{ 
+    background: rgba(234, 207, 207, 0.1);
+    text-align: center;
+}
+#personalia li{
+    text-align: left;
+}
+a:any-link{
+    color: rgb(104, 156, 172);
+}
+
+#utdanning{
+    background: rgba(234, 207, 207, 0.1);
+    text-align: center;
+}
+
+#ferdigheter p{
+    background: rgba(234, 207, 207, 0.1);
+    text-align: center;
+   
+}
+
+#verv p{
+    background: rgba(234, 207, 207, 0.1);
+    color:rgba(126, 122, 122);
+    text-align: center;
+}
+
+.progress-bar{
+    background-color: rgb(171, 155, 157);
+}
+
+table{
+    font-size: 20px;
+    background: rgba(234, 207, 207, 0.3);
+    font-weight: lighter;
+    color: rgb(12, 9, 9);
+  
+   
+}
+
+
+th{
+   
+    font-size: 25px;
+    background: rgba(234, 207, 207, 0.3);
+    font-weight: lighter;
+    color: rgb(12, 9, 9);
+
+      
+}
+
+footer{
+    color:#906001;
+    font-size: 15px;
+    
+}
+

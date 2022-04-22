@@ -5,32 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Egen CSS -->
+    <link rel="stylesheet" href="style.css">
     <title>Carmen Elizabeth Dalsaune</title>
 </head>
 <body>
+    <script>
+        $(function() {
+    $(".blury").css("opacity", 0.9);
+    $(".blury").hover(function() {
+        $(this).animate({opacity: 1.0},);
+    }, function() {
+        $(this).animate({opacity: 0.5},);
+    });
+});
+
+    </script>
     <!--
         OVERSKRIFT
     -->
-    <header class="container-fluid mt-4 p-lg-5">
-        <h1 class="display-1 text-center">Carmen Elizabeth Dalsaune</h1>
+    <div>
+    <header class=".blury container-fluid  p-lg-3">
+        <div id="carmenbilde"> <img src="carmen.png" class="blury img-fluid rounded-circle img-thumbnail"alt="Portrettbilde av Carmen" ></div>
+        <h1 >Carmen Elizabeth Otero Dalsaune</h1>
+        <div class="sitat"> The people I meet are the crayons that color my life... </div>
+
     </header>
+
+</div>
 
     <main class="container-fluid">
         <div class="row">
         <!--
             SIDEFELT VENSTRE SIDE
         -->
-        <section class="col-sm-3">
+        <section id="side" class="col-sm-3">
+            <div id="personalia" class="listecontainer">
+            <h1 class="display-7 border-bottom" >Personalia</h1>
+            
+            <div id="kontakt"><ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fa-solid fa-paper-plane"></i> <a href="mailto:carmen@dalsaune.no">carmen@dalsaune.no</a></li>
+                <li class="list-group-item"><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/carmen-elizabeth-dalsaune-a63144115/">Linkedin</a> </li> 
+            </div>
+            </div>
             <!--
                 UTDANNING
             -->
-            <h1 class="display-6 border-bottom" >Utdanning</h1>
+            <div id="utdanning" class="listecontainer">
+            <h1 class="display-7 border-bottom" >Utdanning</h1>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                     <h5>Digital forretningsutvikling</h5>
@@ -38,83 +72,23 @@
                 </li>
                 <li class="list-group-item">
                     <h5>Master i kunnskap, teknologi og samfunn</h5>
-                    <p>2016-2019, NTNU, Intitutt for tverrfaglige kulturstudier</p> 
+                    <p>2016-2019, NTNU, Institutt for tverrfaglige kulturstudier</p> 
                 </li>
                 <li class="list-group-item">
                     <h5>Bachelor i pedagogikk</h5>
                     <p>2009-2015, Dronning Mauds Minne høgskole for førskolelærerutdanning</p>
                 </li>
             </ul>
+        </div>
 
-            <!--
-                ARBEIDSERFARING
-            -->
-            <h1 class="display-6 border-bottom" >Arbeidserfaring</h1>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5>NTNU, Institutt for nevromedisin og bevegelsesvitenskap <br>
-                    <small>- IT-konsulent, Januar 2022-d.d.</small></h5>
-                    <p> 
-                        <div>Arbeidsoppgaver: 
-                            <ul>
-                                <li>Utvikling og vedlikehold av interne og eksterne websider</li>
-                                <li>Rådgivning knyttet til bruk av digitale tjenester</li>
-                                <li>Teknisk støtte ved instituttets innovative møterom</li>
-                            </ul>
-                        </div>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                <h5>InnovatEd AS <br>
-                    <small>- Kurs- og foredragsholder, Mai 2019-Mai 2020</small></h5>
-                    <p> 
-                        <div>Arbeidsoppgaver: 
-                            <ul>
-                                <li>Holde kurs og workshop om det spillbaserte klasseromsrammeverket Heimdall's Quest</li>
-                                <li>Holde kurs og workshop om å lære bort koding i skolen</li>
-                                <li>Oppdragsbasert</li>
-                            </ul>
-                        </div>
-                        <div>Avsluttet samarbeidet i mai 2020, da det ikke var oppdrag grunnet Covid-19.</div>
-    
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <h5>Carmen Dalsaune Digital Preschool <br>
-                        <small>- Kurs- og foredragsholder, Mai 2015-desember 2019 </small></h5>
-                        <p> 
-                            <div>Arbeidsoppgaver: 
-                                <ul>
-                                    <li>Selvstendig næringsdrivende</li>
-                                    <li>Utviklet en metode for å lære barnehagebarn grunnleggende konsepter i koding og algoritmisk tankegang.</li>
-                                    <li>Holde kurs og workshop om å lære bort koding til barn i barnehagen for barnehagelærere og -ledere.</li>
-                                    <li>Foredrag ved Nasjonal konferanse for bruk av IKT i utdanning og læring (NKUL) 2015 og Scandinavian Educational Technology Transfer (SETT) 2016.</li>
-                                </ul>
-                            </div>
-                            <div>Ingen oppdrag etter inntoget av Covid-19.</div>
-        
-                        </p>
-                    </li>
-                    <li class="list-group-item">
-                        <h5>NTNU, institutt for tverrfaglige kulturstudier<br>
-                            <small>- Vitenskapelig assistent, oktober 2016-desember 2016</small></h5>
-                            <p> 
-                                <div>Arbeidsoppgaver: 
-                                    <ul>
-                                        <li>Deltok i planlegging av et internasjonalt symposium for forskning på miljø og bærekraft.</li>
-                                        <li>Ansvar for logistikk og planlegging av sosiale aktiviteter</li>
-                                    </ul>
-                                </div>
-                            </p>
-                        </li>
-            </ul>
 
             <!--
                 FERDIGHETER
             -->
-            <h1 class="display-6 border-bottom" >Ferdigheter</h1>
+            <div id="ferdigheter" class="listecontainer">
+            <h1 class="display-7 border-bottom" >Ferdigheter</h1>
             <ul class="list-group list-group-flush">
-                <p>
+                
                 <li class="list-group-item">
                     <h5>Språk</h5>
                     <ul class="list-group list-group-flush">
@@ -126,8 +100,7 @@
                         </li>
                     </ul> 
                 </li>
-            </p>
-            <p>
+            <br>
                 <li class="list-group-item">
                     <h5>Digital kompetanse</h5>
                     <ul class="list-group list-group-flush">
@@ -148,7 +121,7 @@
                         </li>
                         <li class="list-group-item">React.js
                             <div class="progress">
-                                <div class="progress-bar" style="width:50%"></div>
+                                <div class="progress-bar" style="width:50% "></div>
                               </div>
                         </li>
                         <li class="list-group-item">Photoshop
@@ -168,25 +141,27 @@
                         </li>
                     </ul>
                 </li>
-            </p>
-            <p>
+          <br>
+                
                 <li class="list-group-item">
                     <h5>Praktiske ferdigheter</h5>
                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Snekkerarbeid</li>
+                        <li class="list-group-item">Design</li>
                         <li class="list-group-item">Tegning</li>
                         <li class="list-group-item">Maling</li>
                         <li class="list-group-item">Søm</li>
                         <li class="list-group-item">Broderi</li>
                         <li class="list-group-item">Strikking</li>
-                        <li class="list-group-item">Design</li>
-                        <li class="list-group-item">Snekkerarbeid</li>
                     </ul>
-            </p>
-
+                </li>
+           
+        </div>
             <!--
                 FIVILLIGE VERV
             -->
-            <h1 class="display-6 border-bottom" >Frivillige verv</h1>
+            <div id="verv" class="listecontainer">
+            <h1 class="display-7 border-bottom" >Frivillige verv</h1>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                     <h5>Strinda menighetsråd</h5>
@@ -199,20 +174,169 @@
                 
             </ul>
             </li>
-        </ul>
+        </div>
+        
 
         </section>
 
         <!--
             HOVEDFELT HØYRE SIDE
         -->
-        <section class="col-sm-9">
+        <section id="hoved" class="col-sm-9">
 
-            <h1 class="display-3 border-bottom" >Kontaktinformasjon</h1>
+            <br><br>
+            <!--
+                NØKKELINFORMASJON
+            -->
+            <h1 class="text-center display-7 border-bottom" >Nøkkelinformasjon</h1>
+            <br>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <h5 class="text-center">Hvem er jeg?</small></h5>
+                    <p> 
+                        <div class="oppg">Jeg er en positiv trønderlatina med stort pågangsmot og gode samarbeidsevner. Jeg har studert mye, og opparbeidet meg mye livserfaring. Jeg har drevet mitt eget kurs- og konsulentfirma, og vært en ildsjel for å få digital teknologi og programmering inn i det livslange læringsløpet, i samarbeid med Lær Kidsa Koding og Utdanningsdirektoratet. Nå jobber jeg som IT-konsulent ved NTNU, der jeg blant annet utvikler websider for å presentere forskningsprosjekter. Her bruker jeg min unike kunnskap fra min mastergrad i science and technology studies sammen med min bachelor i pedagogikk for å formidle akademiske forskningstekster på en måte alle kan forstå.
 
+                            <br><br>Jeg har en stor interesse for IT og teknologi, og da spesielt møtet mellom mennesker og teknologi. Jeg har opparbeidet meg mye kunnskap om feltet, og det siste året har jeg også studert digital forretningsutvikling ved NTNU, for å få en dypere IT-kompetanse. 
+                             <br><br>
+                            <ul>
+                                <li >Variert utdanningsbakgrunn</li>
+                                <li>Stor digital kompetanse, spesielt om den menneskelige anvendelsen av teknologi</li>
+                                <li>Flink til å formidle </li>
+                                <li >Kreativ person med stort pågangsmot</li>
+                                <li>Mye variert kompetanse </li>
+                                <li>Prosjektleder og hovedsnekker i konstruksjonen av en 2-etasjes garasje og tilknyttet veranda, fra bankett til møne </li>
+                            </ul>
+
+                        </div>
+                    </p>
+                    <br>
+                </li>
+                <br>
+
+            <!--
+                ARBEIDSERFARING
+            -->
+            <h1 class="text-center border-bottom" >Arbeidserfaring</h1>
+            <br>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <h5 class="text-center">NTNU, Institutt for nevromedisin og bevegelsesvitenskap <br>
+                    <small>- IT-konsulent, Januar 2022-d.d.</small></h5>
+                    <p> 
+                        <div class="oppg">Arbeidsoppgaver: 
+                            <ul>
+                                <li >Utvikling og vedlikehold av interne og eksterne websider</li>
+                                <li>Rådgivning knyttet til bruk av digitale tjenester</li>
+                                <li>Teknisk støtte ved instituttets innovative møterom</li>
+                            </ul>
+                        </div>
+                    </p>
+                    <br>
+                </li>
+                <br>
+                <li class=" list-group-item">
+                <h5 class="text-center">InnovatEd AS <br>
+                    <small>- Kurs- og foredragsholder, Mai 2019 - Mars 2020</small></h5>
+                    <p> 
+                        <div class="oppg">Arbeidsoppgaver: 
+                            <ul>
+                                <li>Holde kurs og workshop om det spillbaserte klasseromsrammeverket Heimdall's Quest</li>
+                                <li>Holde kurs og workshop om å lære bort koding i skolen</li>
+                                <li>Oppdragsbasert</li>
+                            </ul>
+                           <div>Avsluttet samarbeidet i mai 2020, da det ikke var oppdrag grunnet Covid-19.</div>
+                        </div>
+                        
+    
+                    </p>
+                    <br>
+                </li>
+                <br>
+                <li class=" list-group-item">
+                    <h5 class="text-center">Carmen Dalsaune Digital Preschool <br>
+                        <small>- Kurs- og foredragsholder, Mai 2015 - Mars 2019 </small></h5>
+                        <p> 
+                            <div class="oppg">Arbeidsoppgaver: 
+                                <ul>
+                                    <li>Selvstendig næringsdrivende</li>
+                                    <li>Utviklet en metode for å lære barnehagebarn grunnleggende konsepter i koding og algoritmisk tankegang.</li>
+                                    <li>Holde kurs og workshop om å lære bort koding til barn i barnehagen for barnehagelærere og -ledere.</li>
+                                    <li>Foredrag ved Nasjonal konferanse for bruk av IKT i utdanning og læring (NKUL) 2015 og Scandinavian Educational Technology Transfer (SETT) 2016.</li>
+                                </ul>
+                                <div>Ingen oppdrag etter inntoget av Covid-19.</div>
+                            </div>
+                           
+        
+                        </p>
+                        <br>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <h5 class="text-center">NTNU, institutt for tverrfaglige kulturstudier<br>
+                            <small>- Vitenskapelig assistent, Oktober 2016 - Desember 2016</small></h5>
+                            <p> 
+                                <div class="oppg"> Arbeidsoppgaver: 
+                                    <ul>
+                                        <li>Deltok i planlegging av et internasjonalt symposium for forskning på miljø og bærekraft.</li>
+                                        <li>Ansvar for logistikk og planlegging av sosiale aktiviteter</li>
+                                    </ul>
+                                </div>
+                            </p>
+                            <br>
+                        </li>
+            </ul>
+
+            <h1 class="text-center border-bottom" >Referanser</h1>
+            
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Navn</th>
+                            <th>Stilling</th>
+                            <th>Telefonnummer</th>
+                            <th>E-mail</th>
+                        </tr>
+                    </thead>
+            
+                    <tr class="">
+                        <td>Sigurd Engum</td>
+                        <td>Seniorrådgiver, NTNU, Institutt for nevromedisin og bevegelsesvitenskap</td>
+                        <td>95 26 30 12</td>
+                        <td> <a href="mailto:sigurd.engum@ntnu.no">sigurd.engum@ntnu.no</a> </td>
+                      </tr>
+                      <tr class="">
+                        <td>Vibeke Lauridsen Guttormsgaard</td>
+                        <td>Seniorrådgiver, Utdanningsdirektoratet, Avdeling for digitale fellesløsninger 2</td>
+                        <td>90 20 79 34</td>
+                        <td> <a href="mailto:Vibeke.Guttormsgaard@udir.no">Vibeke.Guttormsgaard@udir.no</a></td>
+                      </tr>
+                      <tr class="">
+                        <td>Thomas Berker</td>
+                        <td>Professor, NTNU, Institutt for tverrfaglige kulturstudier </td>
+                        <td>73 59 13 26</td>
+                        <td> <a href="mailto:thomas.berker@ntnu.no">thomas.berker@ntnu.no</a> </td>
+                      </tr>
+                      <tr class="">
+                        <td>Jason Ready</td>
+                        <td>CEO, InnovatEd AS</td>
+                        <td>41 12 79 24</td>
+                        <td> <a href="mailto:jason@heimdallsquest.no">jason@heimdallsquest.no</a> </td>
+                      </tr>
+                      <tr class="">
+                        <td>Robert Næss</td>
+                        <td>Førsteamanuensis, NTNU, Institutt for tverrfaglige kulturstudier</td>
+                        <td>92 09 76 17</td>
+                        <td> <a href="mailto:robert.ness@ntnu.no">robert.ness@ntnu.no</a> </td>
+                      </tr>
+             </table>
+
+          
         </section>
     </div>
     </main>
+    <footer><i class="fa-solid fa-copyright"></i> 2022 Carmen E. O. Dalsaune</footer>
+    <br>
     
+  
 </body>
 </html>
