@@ -65,6 +65,7 @@ h5{
 
 
 #side{
+    padding-top: 48px;
 background: rgba(234, 207, 207, 0.3);
 }
 
@@ -130,7 +131,7 @@ a:any-link{
 
 table{
     font-size: 20px;
-    background: rgba(234, 207, 207, 0.3);
+    background: rgba(234, 207, 207, 0.1);
     font-weight: lighter;
     color: rgb(12, 9, 9);
   
@@ -138,12 +139,14 @@ table{
 }
 
 
+
 th{
    
     font-size: 25px;
-    background: rgba(234, 207, 207, 0.3);
+    background: rgba(234, 207, 207, 0.1);
     font-weight: lighter;
-    color: rgb(12, 9, 9);
+    color: rgb(40, 32, 32);
+
 
       
 }
