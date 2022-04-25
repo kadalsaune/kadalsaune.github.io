@@ -1,5 +1,5 @@
 body{
-    background-image: url("goldPM.png");
+    background-image: url("pinkmarble.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -75,12 +75,14 @@ h6{
 
 
 #side{
+   
     padding-top: 48px;
 background: rgba(234, 207, 207, 0.3);
 }
 
 #side li{
     /*CSS-kode for hele sidefeltet (venstre)*/
+
     background: rgba(234, 207, 207, 0.1); 
        
 }
