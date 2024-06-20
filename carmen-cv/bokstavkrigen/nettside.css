@@ -1,0 +1,296 @@
+body{
+  margin:0;
+  padding:0;
+  background-image: url("img/forside.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section{
+  min-height: 120vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav{
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size:large;
+}
+
+article{
+        
+  background-color: rgba(63, 52, 75, 0.571);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size:large;
+  color:whitesmoke;
+  position: relative;
+  top: 100px;
+  width:70%;
+  margin:auto;
+  padding: 2em;
+  margin-bottom: 7em;
+  
+  
+  
+}
+
+
+  #spacesh1p{
+  position:absolute;
+  top:39%;
+  left:50%;
+  height:80px;
+  transform:rotate(36deg);
+  }
+
+
+/*Sidemeny*/
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: aut;
+    top: 0;
+    left: 0;
+    background-color: rgba(67, 11, 145, 0.756);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(247, 246, 246);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #6d6868;
+  }
+  .sidepanel .closebtn:hover {
+    color: #6d6868;
+  }
+  
+  .sidepanel .closebtn {
+    background-color:inherit;
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-image: radial-gradient(circle, rgb(143, 143, 181), rgb(63, 40, 96), rgb(31, 26, 131));
+    color: white;
+    padding: 10px 20px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: rgb(222, 222, 238);
+  }
+
+  .closebtn{
+    background-color: rgba(98, 58, 123, 0);
+    color:white
+  }
+
+.container {
+    position: absolute;
+    top: 160px;
+    width: 100% ;
+    height: 100%;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Plassering og utseende på knapp*/
+.btn-white {
+    background-color: rgb(236, 41, 41);
+    color: #fff;
+    font-size: 24px;
+    position: fixed;
+    top: 50%;
+    left: 44%;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+
+/*Bilde/logo*/
+#logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+#regler article {
+ position: relative;
+ top:30px;
+  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#SpaceI1 {
+height: 100px;
+top:0px;
+
+}
+#SpaceI2{
+ height:200px;
+ top:0px;
+ float:right;
+ transform:rotate(20deg);
+}
+
+
+#spillet{
+  height:180px;
+  transform:rotate(-5deg);
+  float:left;
+  position: relative;
+  top:0px;
+  right: 100px;
+}
+#spacesh2p{
+  height: 350px;
+  position: absolute;
+  left:100px;
+  top:300px;
+  transform:rotate(-15deg);
+}
+
+#spacesh3p{
+  height: 350px;
+  position: absolute;
+  left:450px;
+  top:300px;
+  transform:rotate(15deg);
+}
+
+#fireBall{
+  height: 50px;
+  position: absolute;
+  left:630px;
+  top:150px;
+  transform:rotate(15deg);
+}
+#fireBall2{
+  height: 50px;
+  position: absolute;
+  left:175px;
+  top:250px;
+  transform:rotate(-15deg);
+}
+#fireBall3{
+  height: 50px;
+  position: absolute;
+  right:50px;
+  top:350px;
+  transform:rotate(15deg);
+}
+#fireBall5{
+  height: 50px;
+  position: absolute;
+  left:635px;
+  top:250px;
+  transform:rotate(15deg);
+}
+
+#fireBall6{
+  height: 50px;
+  position: absolute;
+  left:260px;
+  top:450px;
+  transform:rotate(-15deg);
+}
+
+#fireBall7{
+  height: 50px;
+  position: absolute;
+  left:260px;
+  top:450px;
+  transform:rotate(-15deg);
+}
+
+#fireBall8{
+  height: 50px;
+  position: absolute;
+  left:80px;
+  top:450px;
+  transform:rotate(-15deg);
+}
+
+#fireBall9{
+  height: 50px;
+  position: absolute;
+  left:10px;
+  top:550px;
+  transform:rotate(-15deg);
+}
+
+#fireBall10{
+  height: 50px;
+  position: absolute;
+  left:700px;
+  top:25px;
+  transform:rotate(15deg);
+}
